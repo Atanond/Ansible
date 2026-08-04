@@ -1,11 +1,12 @@
 ---
 - name: Prueba con Variables
   hosts: all
-  vars: 
-    - mensaje: "Esto es otro mensaje de Ansible"
-    - curso: "dentro del curso de Ansible"
+
+  vars:
+    mensaje: "Esto es otro mensaje de Ansible"
+    curso: "dentro del curso de Ansible"
 
   tasks:
-  - name: Ver variables
-    debug:
-      msg: "En este caso es : {{mensaje}}   {{curso}}"
+    - name: Ver variables
+      debug:
+        msg: "En este caso es: {{ mensaje }} {{ curso }}"
