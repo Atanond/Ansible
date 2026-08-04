@@ -1,6 +1,6 @@
 ---
 - name: Prueba con Variables
-  hosts: debian1
+  hosts: all
   vars: 
     - mensaje: "Esto es otro mensaje de Ansible"
     - curso: "dentro del curso de Ansible"
